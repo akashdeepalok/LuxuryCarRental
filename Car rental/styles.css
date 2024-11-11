@@ -1,0 +1,284 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Style */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #1a1a1a;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffd700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header nav a {
+  color: #ccc;
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("./9bc25811-743b-4b17-8d18-7f77f0d813d4.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 200px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cta-btn {
+  padding: 16px 32px;
+  font-size: 1.2rem;
+  background-color: #ffd700;
+  color: #2c2c2c;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #ffcc00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+    padding: 16px 40px;
+  }
+
+  header .logo {
+    font-size: 20px;
+  }
+
+  header nav a {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+
+  .hero {
+    height: 500px;
+    padding: 80px 40px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .cta-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
+
+/* hero */
+.hero {
+  background-image: url("./9bc25811-743b-4b17-8d18-7f77f0d813d4.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 200px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cta-btn {
+  padding: 16px 32px;
+  font-size: 1.2rem;
+  background-color: #ffd700;
+  color: #2c2c2c;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #ffcc00;
+}
+
+/* Car Listings */
+.cars {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.cars h2 {
+  font-size: 36px;
+  color: #2c2c2c;
+  margin-bottom: 30px;
+}
+
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.car-item {
+  width: 100%;
+  max-width: 320px;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.car-item:hover {
+  transform: scale(1.05);
+}
+
+.car-item img {
+  width: 100%;
+  border-bottom: 3px solid #ffd700;
+}
+
+.car-item h3 {
+  font-size: 24px;
+  color: #2c2c2c;
+  margin: 15px 0;
+}
+
+.car-item p {
+  font-size: 18px;
+  color: #666;
+}
+
+.rent-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #2c2c2c;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.rent-btn:hover {
+  background-color: #444;
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.about h2 {
+  font-size: 36px;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  color: #2c2c2c;
+  margin-bottom: 30px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact form input, .contact form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact form button {
+  padding: 12px 24px;
+  background-color: #ffd700;
+  color: #2c2c2c;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.contact form button:hover {
+  background-color: #ffcc00;
+}
